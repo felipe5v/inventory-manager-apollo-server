@@ -15,7 +15,7 @@ const authentication = async ({ req }) => {
         redirect: "follow",
       };
       let response = await fetch(
-        `${serverConfig.users_api_url}/token/verify/`,
+        `${serverConfig.users_api_url}/token/verify`,
         requestOptions
       );
 

@@ -6,7 +6,7 @@ const productTypeDefs = gql`
     userId: String!
     productName: String!
     category: String
-    urlImg: String
+    imgUrl: String
     minimumAmount: Float
     suppliersId: [String]
   }
@@ -16,7 +16,7 @@ const productTypeDefs = gql`
     userId: String!
     productName: String!
     category: String
-    urlImg: String
+    imgUrl: String
     minimumAmount: String!
     suppliersId: [String]
   }

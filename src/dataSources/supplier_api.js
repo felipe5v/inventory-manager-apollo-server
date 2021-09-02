@@ -13,14 +13,13 @@ class SupplierAPI extends RESTDataSource {
   }
 
   async createSupplier(supplier) {
-    supplier = JSON.stringify(supplier);
     return await this.post(`/suppliers/`, supplier);
   }
 
   async modifySupplier(supplier) {
     const supplierId = supplier.supplierId;
-    supplier = JSON.stringify(supplier);
-    return await this.put(`/modify-supplier/${supplierId}`);
+    console.log(supplierId);
+    return await this.put(`/modify-supplier/${supplierId}`, supplier);
   }
 
   async deleteSupplier(supplierId) {
